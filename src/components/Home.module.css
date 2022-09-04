@@ -1,0 +1,24 @@
+.main {
+    background-color: #f2ebe7;
+    height: 500px;
+    padding: 30px;
+    font-size: 30px;
+}
+.btnShop {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    background-color: #ea8465;
+    color: white;
+    border-radius: 30px;
+    border-width: 0px;
+    width: 170px;
+    height: 50px;
+    
+}
+.categories {
+    display: flex;
+    position: relative;
+    padding: 20px 10px 20px 10px;
+    
+}
