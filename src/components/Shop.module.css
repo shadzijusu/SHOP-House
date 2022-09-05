@@ -1,0 +1,27 @@
+.container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-rows: auto;
+  margin: 100px 0px 100px 50px;
+
+  row-gap: 1rem;
+  column-gap: normal;
+}
+.categories {
+  display: block;
+  margin: 150px 0px 0px 50px;
+}
+.button {
+    margin: 10px;
+  border-radius: 15px;
+  background-color: #eb8564;
+  border-width: 0px;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-weight: normal;
+}
