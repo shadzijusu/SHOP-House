@@ -1,6 +1,11 @@
+import classes from './Footer.module.css'
+import logo from '../images/logo.png'
 function Footer() {
 return(
-    <div><h1>Bye</h1></div>
+    <div className={classes.main}>
+        <img src={logo} alt=""></img>
+        <h1 className={classes.h1}>Free shipping on all orders over $100.</h1>
+    </div>
 )
 }
 export default Footer
