@@ -3,7 +3,10 @@
     align-items: center;
     justify-content: start;
     height: 100px;
+    position: fixed;
+    top: 0;
     display: flex;
+    width: 100%;
 }
 .logo {
     width: 270px;

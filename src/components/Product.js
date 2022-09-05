@@ -1,11 +1,13 @@
+import classes from './Product.module.css'
 function Product(props) {
     return(
-        <div>
-            <img src={props.img} alt=""></img>
-            <h1>{props.title}</h1>
-            <p>{props.price}</p>
-            <p>{props.description}</p>
-            <p>{props.rating} {props.count} ratings</p>
+        <div className={classes.card}>
+            <img src={props.img} alt="" className={classes.img}></img>
+            <h1 className={classes.title}>{props.title}</h1>
+            <p className={classes.price}>$ {props.price} USD</p>
+            <p className={classes.description}>{props.description}</p>
+            <p className={classes.rating}>{props.rate}  ⭐ {props.count} ratings</p>
+            <button className={classes.details}>See details</button>
         </div>
     )
 }
