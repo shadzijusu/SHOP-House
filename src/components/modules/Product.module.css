@@ -1,7 +1,7 @@
 .card {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 600px;
+  width: 400px;
   height: 500px;
   border-radius: 25px;
   border: 2px solid seashell;
@@ -9,8 +9,8 @@
   margin: 10px;
 }
 .img {
-  width: 300px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
   margin: auto;
   display: block;
   padding-top: 20px;
@@ -19,17 +19,19 @@
   font-size: 15px;
   width: 100%;
   margin-top: 20px;
+  text-align: center;
+
 }
 .description {
   color: grey;
   font-size: 14px;
   font-weight: 400;
-}
-.description {
-  margin: auto;
+  margin: 10px;
   padding-right: 70px;
   text-align: left;
+  width: 100%;
 }
+
 .h3 {
   width: 150px;
   height: 40px;
@@ -38,4 +40,16 @@
 
   font-size: 20px;
   padding-bottom: 20px;
+  
+}
+.price {
+  font-weight: bold;
+  margin: auto;
+  padding: 10px;
+  color: #ea8465;
+  text-align: center;
+}
+.rating {
+  margin: 10px;
+  padding: 10px;
 }

@@ -23,8 +23,8 @@
 .bestProducts {
   display: flex;
   padding: 20px;
-  margin: 10px;
-  padding-bottom: 150px;
+  margin: 20px 20px 20px 40px;
+  padding-bottom: 70px;
 }
 .popular {
     font-family: sans-serif;
