@@ -31,7 +31,7 @@ function ProductPage() {
         setQuantity(prevValue => prevValue+1) 
     }
       function decreaseQuantity() {
-        if(quantity > 0)
+        if(quantity > 1)
         setQuantity(prevValue => prevValue-1)
         
       }

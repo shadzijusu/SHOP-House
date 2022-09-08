@@ -2,7 +2,7 @@ import classes from '../modules/Product.module.css'
 import {Link} from "react-router-dom"
 function Product(props) {
     return(
-        <div className={classes.card} style={{height: props.hide ? "400px" : "550px"}}>
+        <div className={classes.card} style={{height: props.hide ? "400px" : "600px"}}>
              {
             props.hide ?
             <Link to="/product"  state={{ from: props.id }} className={classes.h3}>See details</Link> : <></>
