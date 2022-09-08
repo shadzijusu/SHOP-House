@@ -5,26 +5,18 @@
 .main {
     display: flex;
     margin: 10px;
+
 }
 .products {
     display: block;
+  
+    
 }
-.button {
-    height: 30px;
-    font-size: 20px;
-    width: 50px;
-    margin: 15px;
-    background-color: #ea8465;
-    color: white;
-    font-weight: bold;
-    border-color: seashell;
-    border-radius: 20px;
-}
+
 .quantity {
     padding: 20px;
-    margin: 220px 0px 0px 20px;
+    margin: 200px 0px 0px 20px;
     background-color: seashell;
-    height: 60px;
     border-radius: 25px;
     
 }
@@ -33,4 +25,34 @@
     margin: auto;
     text-align: center;
     padding: 20px;
+}
+.delete {
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border-width: 0px;
+    margin: 20px 0px 0px 20px;
+    background-color: #ea8465;
+    color: white;
+}
+.actions {
+    display: block;
+    text-align: center;
+}
+.total {
+    background-color: seashell;
+    width: 350px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: 40px;
+    text-align: center;
+    padding-left: 20px;
+}
+.done {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: #ea8465;
+    color: white;
 }

@@ -38,18 +38,9 @@ function Cart() {
       }
     });
   }, [loaded]);
-  function increaseQuantity(productId) {
-    console.log("Increase value")    
-}
-  function decreaseQuantity(productId) {
-    console.log("Decrease value")
-
-  }
+  
   return (
     <>
-     {
-        console.log(products)
-    }
     <h1 className={classes.h1}>My cart</h1>
 
     <div className={classes.container}>
@@ -67,13 +58,19 @@ function Cart() {
             count={product.rating.count}
             hide={true}
           ></Product>
+          <div className={classes.actions}>
           <div className={classes.quantity}>
-            <button onClick={() => decreaseQuantity(product.id)} className={classes.button}>-</button>
-            <span>{product.quantity}</span>
-            <button onClick={() => increaseQuantity(product.id)} className={classes.button}>+</button>
+            <span>Qty: {product.quantity}</span>
           </div>
+          <button className={classes.delete}>Delete product</button>
+            </div>
+
         </div>
       ))}
+      </div>
+      <div className={classes.total}>
+        <h1>Subtotal $150.55</h1>
+        <button className={classes.done}>Proceed to checkout</button>
       </div>
     </div>
     </>
