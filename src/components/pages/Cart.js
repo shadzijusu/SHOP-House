@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import classes from "../modules/Cart.module.css";
 import Product from "./Product";
 function Cart() {
   const [products, setProducts] = useState([]);
-  const [loaded, setLoaded] = useState(false)
+  const [loaded, setLoaded] = useState(false);
   const [cartData, setCartData] = useState({
     id: 0,
     userId: 0,
@@ -11,41 +12,51 @@ function Cart() {
       {
         productId: 0,
         quantity: 0,
-      }
-        ],
+      },
+    ],
   });
- 
+
   useEffect(() => {
     fetch("https://fakestoreapi.com/carts/1")
       .then((res) => res.json())
       .then((result) => {
         setCartData(result);
-        setLoaded(true)
+        setLoaded(true);
       });
   }, []);
   useEffect(() => {
-    console.log("Firing")
     cartData.products.forEach((product) => {
-        if(product.productId !== 0) {
-            fetch(`https://fakestoreapi.com/products/${product.productId}`)
-            .then((res) => res.json())
-            .then((result) => {
-                setProducts(previousState => ([...previousState, {quantity: product.quantity, ...result}]))
+      if (product.productId !== 0) {
+        fetch(`https://fakestoreapi.com/products/${product.productId}`)
+          .then((res) => res.json())
+          .then((result) => {
+            setProducts((previousState) => [
+              ...previousState,
+              { quantity: product.quantity, ...result },
+            ]);
+          });
+      }
+    });
+  }, [loaded]);
+  function increaseQuantity(productId) {
+    console.log("Increase value")    
+}
+  function decreaseQuantity(productId) {
+    console.log("Decrease value")
 
-            })
-        }
-    })
-  }, [loaded])
- 
-
+  }
   return (
-  <div>
-    
+    <>
+     {
+        console.log(products)
+    }
+    <h1 className={classes.h1}>My cart</h1>
 
-    {
-        products.map((product) => (
-            <div>
-            <Product
+    <div className={classes.container}>
+    <div className={classes.products}>
+      {products.map((product) => (
+        <div className={classes.main}>
+          <Product
             key={product.id}
             id={product.id}
             img={product.image}
@@ -54,18 +65,18 @@ function Cart() {
             description={product.description}
             rate={product.rating.rate}
             count={product.rating.count}
-            hide = {true}
-            >
-            </Product>
-              <p>{product.quantity}</p>
-              </div>
-        ))
-    }
-    
-    
-    
-    
+            hide={true}
+          ></Product>
+          <div className={classes.quantity}>
+            <button onClick={() => decreaseQuantity(product.id)} className={classes.button}>-</button>
+            <span>{product.quantity}</span>
+            <button onClick={() => increaseQuantity(product.id)} className={classes.button}>+</button>
+          </div>
+        </div>
+      ))}
+      </div>
     </div>
-  )
+    </>
+  );
 }
 export default Cart;

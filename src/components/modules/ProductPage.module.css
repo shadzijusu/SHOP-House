@@ -18,5 +18,31 @@
 .box {
     display:block;
     margin-left: 20px;
+    text-align: center;
+}
+.button {
+    height: 30px;
+    font-size: 20px;
+    width: 50px;
+    margin: 15px;
+    background-color: #ea8465;
+    color: white;
+    font-weight: bold;
+    border-color: seashell;
+    border-radius: 20px;
+}
+.add {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border-width: 0px;
+    margin: 10px;
+    background-color: seashell;
+}
+.quantity {
+    padding: 20px;
+    background-color: seashell;
+    height: 60px;
+    border-radius: 25px;
     
 }

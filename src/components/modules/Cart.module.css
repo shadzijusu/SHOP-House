@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    margin-bottom: 35px;
+}
+.main {
+    display: flex;
+    margin: 10px;
+}
+.products {
+    display: block;
+}
+.button {
+    height: 30px;
+    font-size: 20px;
+    width: 50px;
+    margin: 15px;
+    background-color: #ea8465;
+    color: white;
+    font-weight: bold;
+    border-color: seashell;
+    border-radius: 20px;
+}
+.quantity {
+    padding: 20px;
+    margin: 220px 0px 0px 20px;
+    background-color: seashell;
+    height: 60px;
+    border-radius: 25px;
+    
+}
+.h1 {
+    color: #ea8465;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}

@@ -7,6 +7,7 @@ import NumericInput from 'react-numeric-input';
 function ProductPage() {
     const location = useLocation()
     const {from} = location.state
+    const [quantity, setQuantity] = useState(1)
     const [product, setProduct] = useState( {id: 0,
         title: "",
         price: "",
@@ -26,6 +27,14 @@ function ProductPage() {
             setProduct(result);
           });
       }, []);
+      function increaseQuantity() {
+        setQuantity(prevValue => prevValue+1) 
+    }
+      function decreaseQuantity() {
+        if(quantity > 0)
+        setQuantity(prevValue => prevValue-1)
+        
+      }
     return(
         <div className={classes.container}>
         <Product key={product.id}
@@ -37,9 +46,14 @@ function ProductPage() {
         count={product.rating.count}></Product>
         <div className={classes.box}>
         <p className={classes.p}>Quantity</p>
-        <NumericInput min={1} max={5} value={1} className={classes.quantity}></NumericInput>
+        <div className={classes.quantity}>
+            <button onClick={() => decreaseQuantity(product.id)} className={classes.button}>-</button>
+            <span>{quantity}</span>
+            <button onClick={() => increaseQuantity(product.id)} className={classes.button}>+</button>
+          </div>
+          <button className={classes.add}>Add to cart</button>
         </div>
-
+        
         </div>
     )
 }
