@@ -1,4 +1,4 @@
-import classes from "./Shop.module.css";
+import classes from "../modules/Shop.module.css";
 import Product from "./Product";
 import { useState, useEffect } from "react";
 function Shop() {
@@ -46,12 +46,14 @@ function Shop() {
       {allProductData.map((product) => (
         <Product
           key={product.id}
+          id={product.id}
           img={product.image}
           title={product.title}
           price={product.price}
           description={product.description}
           rate={product.rating.rate}
           count={product.rating.count}
+          hide={true}
         ></Product>
       ))}
     </div>

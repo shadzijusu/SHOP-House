@@ -23,6 +23,7 @@
 .bestProducts {
   display: flex;
   padding: 20px;
+  margin: 10px;
   padding-bottom: 150px;
 }
 .popular {

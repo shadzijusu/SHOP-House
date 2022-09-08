@@ -1,4 +1,4 @@
-import classes from "./Home.module.css";
+import classes from "../modules/Home.module.css";
 import CategoryWrapper from "./CategoryWrapper";
 import { useEffect, useState } from "react";
 import Product from "./Product";

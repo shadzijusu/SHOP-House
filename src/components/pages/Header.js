@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import classes from "./Header.module.css"
-import logo from "../images/logo.png"
+import classes from "../modules/Header.module.css"
+import logo from "../../images/logo.png"
 import {useEffect, useState} from "react"
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+
 function Header() {
   const [position, setPosition] = useState(window.pageYOffset)
     const [visible, setVisible] = useState(true) 
@@ -23,7 +25,9 @@ function Header() {
   {
     window.location = '/';   
   }
-  
+  function openCart() {
+    window.location="/cart"
+  }
   return ( 
     <header className={cls} style={{ backgroundColor: "#f2ebe7",
       alignItems: "center",
@@ -38,6 +42,8 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/about">About</Link>
+        <ShoppingCartIcon className={classes.cart} onClick={openCart}></ShoppingCartIcon>
+
       </nav>
     </header>
   );

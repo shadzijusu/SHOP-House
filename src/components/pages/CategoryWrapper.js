@@ -1,4 +1,4 @@
-import classes from "./CategoryWrapper.module.css";
+import classes from "../modules/CategoryWrapper.module.css";
 import { Link } from "react-router-dom";
 
 function CategoryWrapper(props) {

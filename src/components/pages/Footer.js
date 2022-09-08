@@ -1,5 +1,5 @@
-import classes from './Footer.module.css'
-import logo from '../images/logo.png'
+import classes from '../modules/Footer.module.css'
+import logo from '../../images/logo.png'
 function Footer() {
 return(
     <div className={classes.main}>

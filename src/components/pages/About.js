@@ -1,4 +1,4 @@
-import classes from './About.module.css'
+import classes from '../modules/About.module.css'
 function About() {
     return (
         <div className={classes.main}>

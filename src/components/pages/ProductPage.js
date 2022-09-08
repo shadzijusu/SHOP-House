@@ -1,6 +1,6 @@
 import Product from "./Product"
 import { useLocation } from "react-router-dom"
-import classes from "./ProductPage.module.css"
+import classes from "../modules/ProductPage.module.css"
 import {useEffect, useState} from "react"
 import NumericInput from 'react-numeric-input';
 
@@ -38,8 +38,8 @@ function ProductPage() {
         <div className={classes.box}>
         <p className={classes.p}>Quantity</p>
         <NumericInput min={1} max={5} value={1} className={classes.quantity}></NumericInput>
-        <button>Add to cart</button>
         </div>
+
         </div>
     )
 }

@@ -1,0 +1,41 @@
+.card {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 600px;
+  height: 500px;
+  border-radius: 25px;
+  border: 2px solid seashell;
+  padding: 20px;
+  margin: 10px;
+}
+.img {
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  display: block;
+  padding-top: 20px;
+}
+.title {
+  font-size: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+.description {
+  color: grey;
+  font-size: 14px;
+  font-weight: 400;
+}
+.description {
+  margin: auto;
+  padding-right: 70px;
+  text-align: left;
+}
+.h3 {
+  width: 150px;
+  height: 40px;
+
+  font-weight: normal;
+
+  font-size: 20px;
+  padding-bottom: 20px;
+}
