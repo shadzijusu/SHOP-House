@@ -2,7 +2,6 @@ import Product from "./Product"
 import { useLocation } from "react-router-dom"
 import classes from "../modules/ProductPage.module.css"
 import {useEffect, useState} from "react"
-import NumericInput from 'react-numeric-input';
 
 function ProductPage() {
     const location = useLocation()
