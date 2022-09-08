@@ -25,15 +25,15 @@
     padding-right: 70px;
     text-align: left;
 }
-.details {
+.h3 {
     margin: auto;
     display: block;
     width: 150px;
     height: 40px;
-    background-color:  #eb8564;
-    color: white;
+  
     font-weight:normal;
     border: 0;
     border-radius: 25px;
-    font-size: 14px;
+    font-size: 20px;
+    justify-content: center;
 }

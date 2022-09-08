@@ -2,11 +2,14 @@
     background-color: #f2ebe7;
     align-items: center;
     justify-content: start;
-    height: 100px;
-    position: fixed;
-    top: 0;
     display: flex;
     width: 100%;
+    height: 6rem;   
+    top: 0;
+   
+}
+.header.down {
+  top: -6rem;
 }
 .logo {
     width: 270px;
@@ -15,7 +18,7 @@
 margin-left: 20px;
 }
 
-  .header a {
+a {
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
@@ -23,8 +26,8 @@ margin-left: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
   
-  .header a:hover,
-  .header a:active,
-  .header a.active {
+a:hover,
+a:active,
+a.active {
     color: #eb8564;
   }

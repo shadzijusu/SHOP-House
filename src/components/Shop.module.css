@@ -13,7 +13,7 @@
 }
 .categories {
   display: block;
-  margin: 150px 0px 0px 50px;
+  margin: 100px 0px 0px 50px;
 }
 .button {
     margin: 10px;
@@ -24,4 +24,35 @@
   width: 200px;
   height: 50px;
   font-weight: normal;
+}
+.category {
+  font-family: sans-serif;
+  margin: 120px auto 0px auto;
+  color: #ea8465;
+  text-align: center;
+  font-size: 30px;
+  max-width: 600px;
+  position: relative;
+}
+
+.category:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.category:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  right: 0;
+  top: 50%;
+  position: absolute;
 }

@@ -3,6 +3,8 @@ import Product from "./Product";
 import { useState, useEffect } from "react";
 function Shop() {
   const [allProductData, setAllProductData] = useState([]);
+
+
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())

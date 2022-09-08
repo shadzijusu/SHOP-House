@@ -1,0 +1,22 @@
+.container {
+    display:flex;
+    height:100%;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    padding: 20px 0px 100px 0px;
+}
+.quantity {
+    padding: 10px;
+}
+.p {
+    color: #eb8564;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+}
+.box {
+    display:block;
+    margin-left: 20px;
+    
+}
