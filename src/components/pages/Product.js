@@ -4,7 +4,7 @@ import React from 'react';
 
 function Product(props) {
     return(
-        <div className={classes.card} style={{height: props.hide ? "400px" : "600px"}}>
+        <div className={classes.card} style={{height: props.hide ? "400px" : "700px"}}>
              {
             props.hide ?
             <Link to="/product"  state={{ from: props.id }} className={classes.h3}>See details</Link> : <></>
