@@ -61,3 +61,37 @@
     background-color: #ea8465;
     color: white;
 }
+@media (max-width: 700px) {
+    .h1 {
+        margin: 140px 0px 0px 0px;
+    }
+    .container {
+        display: block;
+    }
+    .main {
+        display: block;
+        margin: 0px 0px 0px 40px;
+    }
+    .quantity {
+        margin: 10px 0px 0px 100px;
+        width: 50px;
+    }
+    .delete {
+        margin: 10px 0px 0px -30px;
+    }
+    .total {
+        height: 100px;
+        margin-top: 20px;
+    }
+    .totalText {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .done {
+        width: 150px;
+        height: 30px;
+        font-size: 14px;
+        padding: 4px;
+    }
+}

@@ -35,7 +35,7 @@ function Shop() {
   return (
     <div>
         <div className={classes.categories}>
-        <h1>Shop by category</h1>
+        <h1 className={classes.h1}>Shop by category</h1>
         <button className={classes.button} onClick={() => handleClick("women's clothing")}>Women's Clothing</button>
         <button className={classes.button} onClick={() => handleClick("men's clothing")}>Men's Clothing</button>
         <button className={classes.button} onClick={() => handleClick("electronics")}>Electronics</button>

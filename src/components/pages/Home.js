@@ -23,8 +23,8 @@ function Home() {
     return (
       <div>
         <div className={classes.main}>
-          <h1>Find it, love it, buy it.</h1>
-          <h2>A few clicks is all it takes.</h2>
+          <h1 className={classes.h1}>Find it, love it, buy it.</h1>
+          <h2 className={classes.h2}>A few clicks is all it takes.</h2>
           <button className={classes.btnShop} onClick={openShop}>Shop Collection</button>
         </div>
         <div className={classes.categories}>

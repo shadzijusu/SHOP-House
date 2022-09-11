@@ -6,9 +6,7 @@
     align-items:center;
     padding: 20px 0px 100px 0px;
 }
-.quantity {
-    padding: 10px;
-}
+
 .p {
     color: #eb8564;
     font-size: 20px;
@@ -40,7 +38,6 @@
     background-color: seashell;
 }
 .add:hover,
-.add:active,
 .add.active {
   color: #ea8465;
 }
@@ -50,4 +47,33 @@
     height: 60px;
     border-radius: 25px;
     
+}
+@media (max-width: 700px) {
+    .container {
+        display: block;
+        margin: 150px 5px 5px 30px;
+    }   
+    .box {
+        height: 200px;
+        margin: 0 auto;
+        display: table;
+    }
+    .quantity {
+        height: 50px;
+        width: 150px;
+        padding: 0px 5px 5px 0px;
+        margin: 10px 0px 0px 20px;
+    }
+    .button  {
+        height: 30px;
+        width: 30px;
+    }
+    .p {
+        margin: 10px 50px 0px 0px;
+        padding: 0px;
+    }
+    .add {
+        margin: 10px 50px 0px 0px; 
+    }
+  
 }

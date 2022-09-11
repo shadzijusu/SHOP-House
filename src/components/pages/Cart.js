@@ -65,7 +65,7 @@ function Cart() {
           ))}
         </div>
         <div className={classes.total}>
-          <h1>Subtotal ${total}</h1>
+          <h1 className={classes.totalText}>Subtotal ${total}</h1>
           <button className={classes.done}>Proceed to checkout</button>
         </div>
       </div>

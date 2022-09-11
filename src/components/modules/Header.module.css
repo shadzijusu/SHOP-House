@@ -25,6 +25,7 @@ a {
   font-size: 1.5rem;
   color: black;
   margin: 15px;
+  
 }
 
 a:hover,
@@ -46,6 +47,7 @@ a.active {
   display: flex;
   margin-right: 50px;
   align-items: center;
+  justify-content: center;
   background-color: #eb8564;
   border-radius: 10px;
   padding: 5px;
@@ -53,4 +55,32 @@ a.active {
 .span {
   font-weight: 500;
   margin: 5px;
+}
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    background-color: #f2ebe7;
+    width: 100%;
+    padding: 20px;
+    
+  }
+  a {
+    margin: 10px;
+    font-size: 1rem
+  }
+  .logo {
+    width: 150px;
+    margin-right: 70px;
+  }
+  .cartElement {
+    justify-content: center;
+    padding: 1px;
+    font-size: 15px;
+  }
 }

@@ -32,33 +32,76 @@
   padding-bottom: 70px;
 }
 .popular {
-    font-family: sans-serif;
-    margin: auto;
-    color: #ea8465;
+  font-family: sans-serif;
+  margin: auto;
+  color: #ea8465;
+  text-align: center;
+  font-size: 30px;
+  max-width: 600px;
+  position: relative;
+}
+
+.popular:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.popular:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+@media (max-width: 700px) {
+  .main {
+    text-align: left;
+    padding: 100px 0px 0px 10px;
+    height: 200px;
+  }
+  .h1 {
+    font-size: 20px;
+    padding: 40px 20px 0px 10px;
+  }
+  .h2 {
+    padding: 0px 10px 0px 10px;
+    font-size: 15px;
+  }
+  .btnShop {
+    font-size: 15px;
+    height: 20px;
+    width: 150px;
+    margin: 10px;
+  }
+  .categories {
+    display: block;
     text-align: center;
-    font-size: 30px;
-    max-width: 600px;
-    position: relative;
   }
-  
-  .popular:before {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: #000;
-    left: 0;
-    top: 50%;
-    position: absolute;
+  .popular {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 70px;
   }
-  
   .popular:after {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 2px;
-    background: #000;
-    right: 0;
-    top: 50%;
-    position: absolute;
+    visibility: hidden;
   }
+  .popular:before {
+    visibility: hidden;
+
+  }
+  .bestProducts {
+    display:block;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+}
