@@ -6,6 +6,7 @@ import Footer from '../src/components/pages/Footer'
 import Shop from '../src/components/pages/Shop'
 import ProductPage from "../src/components/pages/ProductPage";
 import ShopCategory from "../src/components/pages/ShopCategory";
+import React from 'react';
 import Cart from "../src/components/pages/Cart";
 function App() {
   return (
