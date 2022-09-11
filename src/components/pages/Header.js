@@ -6,7 +6,7 @@ import React from 'react';
 import cart from "../../images/carticon.png"
 function Header() {
   const [position, setPosition] = useState(window.pageYOffset);
-  const [total, setTotal] = useState((Math.round(JSON.parse(localStorage.getItem("total")) * 100 ) / 100).toFixed(2) || 0);
+  const [total, setTotal] = useState(JSON.parse(localStorage.getItem("total")) || 0);
   const [numberOfItems, setNumberOfItems] = useState( 
     JSON.parse(localStorage.getItem("products")) !== null ?
     JSON.parse(localStorage.getItem("products")).length : 0
@@ -38,11 +38,11 @@ function Header() {
       // When local storage changes, dump the list to
       // the console.
       try {
-       setTotal((Math.round(JSON.parse(localStorage.getItem("total")) * 100 ) / 100).toFixed(2))  
+       setTotal(JSON.parse(localStorage.getItem("total")))
        setNumberOfItems(JSON.parse(localStorage.getItem("products")).length)
       }
       catch(err) {
-        localStorage.setItem("total", JSON.stringify(0))
+        localStorage.setItem("total", JSON.stringify(0.0))
       }
     });
     

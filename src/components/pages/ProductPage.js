@@ -2,12 +2,12 @@ import Product from "./Product";
 import { useLocation } from "react-router-dom";
 import classes from "../modules/ProductPage.module.css";
 import { useEffect, useState } from "react";
-import React from 'react';
+import React from "react";
 
 function ProductPage() {
   const location = useLocation();
   const { from } = location.state;
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(1.0);
   const [product, setProduct] = useState({
     id: 0,
     title: "",
@@ -34,12 +34,17 @@ function ProductPage() {
     if (quantity > 1) setQuantity((prevValue) => prevValue - 1);
   }
   function addToCart() {
-    var products = JSON.parse(localStorage.getItem("products")) || [];
-    products.push({quantity: quantity, ...product});
-    localStorage.setItem("products", JSON.stringify(products));
-    var total = JSON.parse(localStorage.getItem("total") ||0)
-    localStorage.setItem("total", JSON.stringify(total + (product.price*quantity)))
-    window.location = '/cart'
+    let products = [];
+    let total = 0.0;
+    if (JSON.parse(localStorage.getItem("products")) !== null) {
+      products = JSON.parse(localStorage.getItem("products"));
+      total = JSON.parse(localStorage.getItem("total"));
+    } 
+      products.push({ quantity: quantity, ...product });
+      localStorage.setItem("products", JSON.stringify(products));
+      localStorage.setItem("total", JSON.stringify(Math.round((total + (product.price*quantity))*100)/100))
+
+    window.location = "/cart";
   }
 
   return (

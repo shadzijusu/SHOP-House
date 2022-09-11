@@ -1,27 +1,32 @@
 import { useEffect, useState } from "react";
 import classes from "../modules/Cart.module.css";
 import Product from "./Product";
-import React from 'react';
+import React from "react";
 
 function Cart() {
-  const [products, setProducts] = useState(JSON.parse(localStorage.getItem("products")) || []);
-  const [total, setTotal] = useState(JSON.parse(localStorage.getItem("total")) || 0);
+  const [products, setProducts] = useState(
+    JSON.parse(localStorage.getItem("products")) || []
+  );
+  const [total, setTotal] = useState(
+    JSON.parse(localStorage.getItem("total")) || 0.0
+  );
   const [changeStorage, setChangeStorage] = useState(false);
-  
+
   useEffect(() => {
-    localStorage.clear()
     localStorage.setItem("products", JSON.stringify(products));
     localStorage.setItem("total", JSON.stringify(total));
-  }, [changeStorage])
-  
+  }, [changeStorage]);
+
   function deleteProduct(productId, price, quantity) {
     let filteredProducts = products.filter(
       (product) => product.id !== productId
     );
     setProducts(filteredProducts);
-    setTotal((previousState) => previousState - (price*quantity));
-    setChangeStorage(true)
-    window.location = "/cart"
+    setTotal((previousState) => Math.round((previousState - price * quantity)*100)/100)
+    localStorage.setItem("products", JSON.stringify(filteredProducts));
+    localStorage.setItem("total", JSON.stringify(total));
+    setChangeStorage(true);
+    window.location="/cart"
   }
   return (
     <>
@@ -47,7 +52,9 @@ function Cart() {
                 </div>
                 <button
                   className={classes.delete}
-                  onClick={() => deleteProduct(product.id, product.price, product.quantity)}
+                  onClick={() =>
+                    deleteProduct(product.id, product.price, product.quantity)
+                  }
                 >
                   Delete product
                 </button>
