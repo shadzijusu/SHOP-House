@@ -20,7 +20,7 @@ font-size: 24px;
 @media (max-width: 700px) {
     .main {
         padding: 10px;
-        margin: 10px 10px 10px 50px;
+        margin: 10px 10px 10px 75px;
     }
     .h1 {
         font-size: 14px;

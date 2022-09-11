@@ -65,9 +65,11 @@ button:active {
     grid-template-columns: repeat(1, 1fr);
 
     grid-auto-rows: auto;
+    margin: 0px 0px 0px 50px;
   }
   .categories {
-    margin-top: 150px;
+    margin: 240px 0px 0px 0px;
+    text-align: center;
 
   }
   .h1 {

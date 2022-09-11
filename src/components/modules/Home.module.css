@@ -64,8 +64,10 @@
 @media (max-width: 700px) {
   .main {
     text-align: left;
-    padding: 100px 0px 0px 10px;
+    padding: 170px 0px 0px 10px;
     height: 200px;
+    background-color: seashell;
+    width: 100%;
   }
   .h1 {
     font-size: 20px;
@@ -77,7 +79,7 @@
   }
   .btnShop {
     font-size: 15px;
-    height: 20px;
+    height: 24px;
     width: 150px;
     margin: 10px;
   }
@@ -86,9 +88,9 @@
     text-align: center;
   }
   .popular {
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
-    margin-left: 70px;
+    margin-left: 65px;
   }
   .popular:after {
     visibility: hidden;
@@ -99,8 +101,9 @@
   }
   .bestProducts {
     display:block;
-    margin: 10px;
     padding: 5px;
+    margin: 10px 0px 20px 40px;
+    justify-content: center;
   }
   
 }

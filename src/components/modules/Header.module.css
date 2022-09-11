@@ -70,6 +70,7 @@ a:active {
   header {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .nav {
     display: flex;
@@ -77,19 +78,20 @@ a:active {
     height: 30rem;
     background-color: #f2ebe7;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
   }
   a {
     margin: 10px;
     font-size: 1rem;
   }
   .logo {
-    width: 150px;
-    margin-right: 70px;
+    width: 200px;
+    margin: 10px 20px 0px 0px;
   }
   .cartElement {
     justify-content: center;
     padding: 1px;
+    margin: 5px;
     font-size: 15px;
   }
 }

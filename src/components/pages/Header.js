@@ -7,7 +7,7 @@ import cart from "../../images/carticon.png"
 function Header() {
   const [position, setPosition] = useState(window.pageYOffset);
   const [total, setTotal] = useState((Math.round(JSON.parse(localStorage.getItem("total")) * 100 ) / 100).toFixed(2) || 0);
-  const [numberOfItems, setNumberOfItems] = useState(0);
+  const [numberOfItems, setNumberOfItems] = useState(JSON.parse(localStorage.getItem("products")).length || 0);
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +39,7 @@ function Header() {
        setNumberOfItems(JSON.parse(localStorage.getItem("products")).length)
       }
       catch(err) {
-        localStorage.setItem("total", "0")
+        localStorage.setItem("total", JSON.stringify(0))
       }
     });
     
