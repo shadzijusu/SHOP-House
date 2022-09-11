@@ -4,4 +4,6 @@
 The online store where you pay less and smile more.
 
 ## About the app
-SHOP House is an online store developed using React and the [Fake Store API](https://fakestoreapi.com/). 
+SHOP House is an online shopping store developed using React and the [Fake Store API](https://fakestoreapi.com/). 
+
+Visit the application: https://shop-house.netlify.app/
