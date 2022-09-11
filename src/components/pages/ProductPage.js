@@ -21,7 +21,6 @@ function ProductPage() {
     },
   });
   useEffect(() => {
-    console.log(from);
     fetch(`https://fakestoreapi.com/products/${from}`)
       .then((res) => res.json())
       .then((result) => {

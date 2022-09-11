@@ -17,7 +17,7 @@ function Product(props) {
             }
             {
                 props.hide ? <></> :
-            <p className={classes.rating}>{props.rate}  ⭐ {props.count} ratings</p> 
+            <p className={classes.rating}>{props.rate}  <span role="img" aria-label="star">⭐</span> {props.count} ratings</p> 
             }
         </div>
     )
