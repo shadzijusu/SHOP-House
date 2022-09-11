@@ -59,14 +59,15 @@
         margin: 0px 0px 0px 40px;
     }
     .quantity {
-        height: 50px;
-        width: 150px;
+        height: fit-content;
+        width: fit-content;
         padding: 0px 5px 5px 0px;
         margin: 10px 0px 0px 25px;
     }
     .button  {
         height: 30px;
         width: 30px;
+        padding: 0px;
     }
     .p {
         margin: 10px 50px 0px 0px;
