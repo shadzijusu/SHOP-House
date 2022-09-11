@@ -1,6 +1,11 @@
+.body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
 .container {
     display: flex;
     margin-bottom: 35px;
+
 }
 .main {
     display: flex;
@@ -18,7 +23,7 @@
     margin: 200px 0px 0px 20px;
     background-color: seashell;
     border-radius: 25px;
-    
+    height: 20px;
 }
 .h1 {
     color: #ea8465;

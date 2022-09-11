@@ -39,6 +39,11 @@
     margin: 10px;
     background-color: seashell;
 }
+.add:hover,
+.add:active,
+.add.active {
+  color: #ea8465;
+}
 .quantity {
     padding: 20px;
     background-color: seashell;
