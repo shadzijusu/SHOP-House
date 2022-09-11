@@ -7,7 +7,6 @@
   height: 8rem;
   top: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
 }
 .header.down {
   top: -6rem;
@@ -25,22 +24,23 @@ a {
   font-size: 1.5rem;
   color: black;
   margin: 15px;
-  
 }
 
-a:hover,
-a:active,
-a.active {
+a:hover {
+  color: #eb8564;
+}
+a:active {
   color: #eb8564;
 }
 .cart {
-  color: white;
+  border-width: 0px;
+  background-color: #eb8564;
 }
 .cart:hover,
-.cart:active,
-.cart.active {
+.cart:active {
   color: black;
 }
+
 .cartElement {
   float: right !important;
   width: 150px;
@@ -52,9 +52,19 @@ a.active {
   border-radius: 10px;
   padding: 5px;
 }
+
 .span {
   font-weight: 500;
   margin: 5px;
+}
+.cartIcon {
+  width: 27x;
+  height: 27px;
+  background: none;
+}
+.cart:hover .cartIcon {
+  background: cadetblue;
+  border-radius: 10px;
 }
 @media (max-width: 700px) {
   header {
@@ -68,11 +78,10 @@ a.active {
     background-color: #f2ebe7;
     width: 100%;
     padding: 20px;
-    
   }
   a {
     margin: 10px;
-    font-size: 1rem
+    font-size: 1rem;
   }
   .logo {
     width: 150px;

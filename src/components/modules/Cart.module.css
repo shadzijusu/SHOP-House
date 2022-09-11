@@ -61,6 +61,9 @@
     background-color: #ea8465;
     color: white;
 }
+.done:hover {
+    color:black;
+}
 @media (max-width: 700px) {
     .h1 {
         margin: 140px 0px 0px 0px;

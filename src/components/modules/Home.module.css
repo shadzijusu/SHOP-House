@@ -16,8 +16,7 @@
   height: 50px;
 }
 .btnShop:hover,
-.btnShop:active,
-.btnShop.active {
+.btnShop:active {
   color: black;
 }
 .categories {

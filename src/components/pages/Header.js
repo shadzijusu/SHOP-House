@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import classes from "../modules/Header.module.css";
 import logo from "../../images/logo.png";
 import { useEffect, useState } from "react";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import React from 'react';
-
+import cart from "../../images/carticon.png"
 function Header() {
   const [position, setPosition] = useState(window.pageYOffset);
   const [total, setTotal] = useState((Math.round(JSON.parse(localStorage.getItem("total")) * 100 ) / 100).toFixed(2) || 0);
@@ -65,10 +64,10 @@ function Header() {
         <Link to="/shop">Shop</Link>
         <Link to="/about">About</Link>
         <div className={classes.cartElement}>
-        <ShoppingCartIcon
+        <button
           className={classes.cart}
           onClick={openCart}
-        ></ShoppingCartIcon>
+        ><img className={classes.cartIcon} src={cart} alt=""></img></button>
         <span className={classes.span}>{numberOfItems} (${total})</span>
         </div>
       </nav>
