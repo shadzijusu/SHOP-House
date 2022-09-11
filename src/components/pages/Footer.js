@@ -1,5 +1,7 @@
 import classes from '../modules/Footer.module.css'
 import logo from '../../images/logo.png'
+import React from 'react';
+
 function Footer() {
 return(
     <div className={classes.main}>

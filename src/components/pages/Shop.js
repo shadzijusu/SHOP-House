@@ -1,5 +1,7 @@
 import classes from "../modules/Shop.module.css";
 import Product from "./Product";
+import React from 'react';
+
 import { useState, useEffect } from "react";
 function Shop() {
   const [allProductData, setAllProductData] = useState([]);

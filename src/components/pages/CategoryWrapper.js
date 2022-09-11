@@ -1,5 +1,6 @@
 import classes from "../modules/CategoryWrapper.module.css";
 import { Link } from "react-router-dom";
+import React from 'react';
 
 function CategoryWrapper(props) {
   const name = props.categoryName.toLowerCase()

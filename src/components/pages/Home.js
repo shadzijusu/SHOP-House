@@ -1,6 +1,8 @@
 import classes from "../modules/Home.module.css";
 import CategoryWrapper from "./CategoryWrapper";
 import { useEffect, useState } from "react";
+import React from 'react';
+
 import Product from "./Product";
 function Home() {
   const [allProductData, setAllProductData] = useState([]);

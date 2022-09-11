@@ -1,4 +1,6 @@
 import classes from '../modules/About.module.css'
+import React from 'react';
+
 function About() {
     return (
         <div className={classes.main}>

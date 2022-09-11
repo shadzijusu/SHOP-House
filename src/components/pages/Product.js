@@ -1,5 +1,7 @@
 import classes from '../modules/Product.module.css'
 import {Link} from "react-router-dom"
+import React from 'react';
+
 function Product(props) {
     return(
         <div className={classes.card} style={{height: props.hide ? "400px" : "600px"}}>

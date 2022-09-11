@@ -2,6 +2,8 @@ import classes from "../modules/Shop.module.css";
 import Product from "./Product";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import React from 'react';
+
 function ShopCategory() {
   const location = useLocation()
   const {from} = location.state

@@ -3,6 +3,7 @@ import classes from "../modules/Header.module.css";
 import logo from "../../images/logo.png";
 import { useEffect, useState } from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import React from 'react';
 
 function Header() {
   const [position, setPosition] = useState(window.pageYOffset);

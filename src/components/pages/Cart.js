@@ -1,21 +1,12 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "../modules/Cart.module.css";
 import Product from "./Product";
+import React from 'react';
+
 function Cart() {
   const [products, setProducts] = useState(JSON.parse(localStorage.getItem("products")) || []);
   const [total, setTotal] = useState(JSON.parse(localStorage.getItem("total")) || 0);
   const [changeStorage, setChangeStorage] = useState(false);
-  const [cartData, setCartData] = useState({
-    id: 0,
-    userId: 0,
-    date: Date(),
-    products: [
-      {
-        productId: 0,
-        quantity: 0,
-      },
-    ],
-  });
   
   useEffect(() => {
     localStorage.clear()
