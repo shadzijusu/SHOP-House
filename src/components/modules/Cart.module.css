@@ -64,7 +64,7 @@
 .done:hover {
     color:black;
 }
-@media (max-width: 700px) {
+@media (max-width: 950px) {
     .h1 {
         margin: 200px 0px 0px 0px;
     }
@@ -80,11 +80,11 @@
         width: 50px;
     }
     .delete {
-        margin: 10px 0px 0px -30px;
+        margin: 10px 0px 0px -50px;
     }
     .total {
         height: 120px;
-        margin-top: 20px;
+        margin-top: 30px;
         width: 100%;
     }
     .totalText {
