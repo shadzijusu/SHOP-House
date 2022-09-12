@@ -1,102 +1,100 @@
 .body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container {
-    display: flex;
-    margin-bottom: 35px;
-
+  display: flex;
+  margin-bottom: 35px;
 }
 .main {
-    display: flex;
-    margin: 10px;
-
+  display: flex;
+  margin: 10px;
 }
 .products {
-    display: block;
-  
-    
+  display: block;
 }
 
 .quantity {
-    padding: 20px;
-    margin: 200px 0px 0px 20px;
-    background-color: seashell;
-    border-radius: 25px;
-    height: 20px;
+  padding: 20px;
+  margin: 200px 0px 0px 20px;
+  background-color: seashell;
+  border-radius: 25px;
+  height: 20px;
 }
 .h1 {
-    color: #ea8465;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
+  color: #ea8465;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
 }
 .delete {
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
-    border-width: 0px;
-    margin: 20px 0px 0px 20px;
-    background-color: #ea8465;
-    color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  border-width: 0px;
+  margin: 20px 0px 0px 20px;
+  background-color: #ea8465;
+  color: white;
 }
 .actions {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 .total {
-    background-color: seashell;
-    width: 350px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: 40px;
-    text-align: center;
-    padding-left: 20px;
+  background-color: seashell;
+  width: 350px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: 40px;
+  text-align: center;
+  padding-left: 20px;
 }
 .done {
-    width: 200px;
-    height: 40px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: #ea8465;
-    color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: #ea8465;
+  color: white;
 }
 .done:hover {
-    color:black;
+  color: black;
+}
+.done {
+  cursor: pointer;
 }
 @media (max-width: 950px) {
-    .h1 {
-        margin: 200px 0px 0px 0px;
-    }
-    .container {
-        display: block;
-    }
-    .main {
-        display: block;
-        margin: 10px 10px 10px 50px;
-    }
-    .quantity {
-        margin: 10px 0px 0px 100px;
-        width: 50px;
-    }
-    .delete {
-        margin: 10px 0px 0px -50px;
-    }
-    .total {
-        height: 120px;
-        margin-top: 30px;
-        width: 100%;
-    }
-    .totalText {
-        font-size: 20px;
-        margin: 10px 0px 15px -20px;
-        padding: 10px;
-    }
-    .done {
-        width: 150px;
-        height: 30px;
-        font-size: 14px;
-        padding: 4px;
-        margin: 0px 0px 0px -20px;
-
-    }
+  .h1 {
+    margin: 200px 0px 0px 0px;
+  }
+  .container {
+    display: block;
+  }
+  .main {
+    display: block;
+    margin: 10px 10px 10px 50px;
+  }
+  .quantity {
+    margin: 10px 0px 0px 100px;
+    width: 50px;
+  }
+  .delete {
+    margin: 10px 0px 0px -50px;
+  }
+  .total {
+    height: 120px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .totalText {
+    font-size: 20px;
+    margin: 10px 0px 15px -20px;
+    padding: 10px;
+  }
+  .done {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    padding: 4px;
+    margin: 0px 0px 0px -20px;
+  }
 }

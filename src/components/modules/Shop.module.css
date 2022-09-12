@@ -25,6 +25,9 @@
   font-size: 17px;
   font-weight: bold;
 }
+button {
+  cursor: pointer;
+}
 button:hover,
 button:active {
   color: black;

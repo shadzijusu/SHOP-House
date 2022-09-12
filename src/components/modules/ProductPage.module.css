@@ -1,80 +1,81 @@
 .container {
-    display:flex;
-    height:100%;
-    width:100%;
-    justify-content:center;
-    align-items:center;
-    padding: 20px 0px 100px 0px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 100px 0px;
 }
 
 .p {
-    color: #eb8564;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0px;
+  color: #eb8564;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
 }
 .box {
-    display:block;
-    margin-left: 20px;
-    text-align: center;
+  display: block;
+  margin-left: 20px;
+  text-align: center;
 }
 .button {
-    height: 30px;
-    font-size: 20px;
-    width: 50px;
-    margin: 15px;
-    background-color: #ea8465;
-    color: white;
-    font-weight: bold;
-    border-color: seashell;
-    border-radius: 20px;
+  height: 30px;
+  font-size: 20px;
+  width: 50px;
+  margin: 15px;
+  background-color: #ea8465;
+  color: white;
+  font-weight: bold;
+  border-color: seashell;
+  border-radius: 20px;
 }
 .add {
-    width: 200px;
-    height: 40px;
-    border-radius: 15px;
-    border-width: 0px;
-    margin: 10px;
-    background-color: seashell;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border-width: 0px;
+  margin: 10px;
+  background-color: seashell;
+}
+.add {
+  cursor: pointer;
 }
 .add:hover,
 .add.active {
   color: #ea8465;
 }
 .quantity {
-    padding: 20px;
-    background-color: seashell;
-    height: 60px;
-    border-radius: 25px;
-    
+  padding: 20px;
+  background-color: seashell;
+  height: 60px;
+  border-radius: 25px;
 }
 @media (max-width: 950px) {
-    .container {
-        display: block;
-        margin: 200px 5px 5px 50px;
-    }   
-    .box {
-        height: 170px;
-        display: table;
-        margin: 0px 0px 0px 40px;
-    }
-    .quantity {
-        height: fit-content;
-        width: fit-content;
-        padding: 0px 5px 5px 0px;
-        margin: 10px 0px 0px 25px;
-    }
-    .button  {
-        height: 30px;
-        width: 30px;
-        padding: 0px;
-    }
-    .p {
-        margin: 10px 50px 0px 0px;
-        padding: 0px;
-    }
-    .add {
-        margin: 10px 50px 0px 0px; 
-    }
-  
+  .container {
+    display: block;
+    margin: 200px 5px 5px 50px;
+  }
+  .box {
+    height: 170px;
+    display: table;
+    margin: 0px 0px 0px 40px;
+  }
+  .quantity {
+    height: fit-content;
+    width: fit-content;
+    padding: 0px 5px 5px 0px;
+    margin: 10px 0px 0px 25px;
+  }
+  .button {
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+  }
+  .p {
+    margin: 10px 50px 0px 0px;
+    padding: 0px;
+  }
+  .add {
+    margin: 10px 50px 0px 0px;
+  }
 }

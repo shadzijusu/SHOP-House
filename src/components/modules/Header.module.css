@@ -13,6 +13,8 @@
 }
 .logo {
   width: 270px;
+  cursor: pointer;
+
 }
 .nav {
   margin-left: 20px;
@@ -24,23 +26,23 @@ a {
   font-size: 1.5rem;
   color: black;
   margin: 15px;
+  cursor: pointer;
 }
 
-a:hover {
-  color: #eb8564;
-}
+a:hover,
 a:active {
   color: #eb8564;
 }
+
 .cart {
   border-width: 0px;
   background-color: #eb8564;
+  cursor: pointer;
 }
 .cart:hover,
 .cart:active {
   color: black;
 }
-
 .cartElement {
   float: right !important;
   width: 150px;
@@ -61,6 +63,7 @@ a:active {
   width: 27x;
   height: 27px;
   background: none;
+  cursor: pointer;
 }
 .cart:hover .cartIcon {
   background: cadetblue;
