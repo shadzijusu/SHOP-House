@@ -7,6 +7,26 @@
   background-position: center; /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+.load {
+  text-align: center;
+}
+.loader{
+  margin: auto;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #FF6700;
+}
 .btnShop {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
@@ -77,6 +97,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+  .loader {
+    margin: 200px 0px 0px -30px;
   }
   .h1 {
     font-size: 20px;

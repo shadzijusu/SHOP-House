@@ -40,7 +40,16 @@ function ProductPage() {
       products = JSON.parse(localStorage.getItem("products"));
       total = JSON.parse(localStorage.getItem("total"));
     } 
+    let alreadyInCart = false
+    products.map((prod) => {
+      if(prod.id === product.id) {
+        prod.quantity += quantity
+        alreadyInCart = true
+      }
+    })
+    if(alreadyInCart === false) {
       products.push({ quantity: quantity, ...product });
+    }
       localStorage.setItem("products", JSON.stringify(products));
       localStorage.setItem("total", JSON.stringify(Math.round((total + (product.price*quantity))*100)/100))
 
